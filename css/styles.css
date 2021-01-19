@@ -558,6 +558,7 @@ footer {
 .page-footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .logo.footer {
@@ -663,8 +664,8 @@ footer {
   justify-content: space-between;
   align-items: baseline;
   width: 570px;
-  height: 86px;
-  margin-left: 107px;
+
+  margin-left: 93px;
 }
 
 .footer-subscription input {
@@ -1119,7 +1120,6 @@ textarea {
 /* Checkbox */
 
 .checkbox {
-  /* appearance: none; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1142,8 +1142,11 @@ textarea {
   text-decoration: underline;
 }
 
-.icon {
-  display: inline-block;
+.icon::after {
+  content: '';
+  display: inline-flex;
+  justify-content: center;
+
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -1151,7 +1154,7 @@ textarea {
   border-radius: 2px;
 }
 
-.checkbox:checked + .icon {
+.checkbox:checked + .icon::after {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
@@ -1163,5 +1166,6 @@ textarea {
   margin-top: 20px;
   margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
