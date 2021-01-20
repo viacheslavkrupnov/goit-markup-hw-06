@@ -1050,6 +1050,9 @@ textarea {
   transform: translateY(150%);
   margin-left: 12px;
 
+  top: 0;
+  left: 0;
+
   fill: currentColor;
   transition-property: color, fill;
   transition-duration: 250ms;
