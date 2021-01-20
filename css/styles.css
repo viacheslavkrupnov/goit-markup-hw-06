@@ -989,18 +989,17 @@ textarea {
 }
 
 .form {
-  width: 448px;
-  margin-left: 35px;
-  margin-right: 45px;
-  padding: 0;
+  min-width: 448px;
+  margin: 0;
+  padding-left: 35px;
+  padding-right: 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .form-title {
-  margin-left: 35px;
-  margin-right: 45px;
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 12px;
-  padding: 0;
   text-align: center;
   color: var(--title-text-color);
 
